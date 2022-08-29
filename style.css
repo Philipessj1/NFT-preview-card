@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Outfit', sans-serif;
+}
+
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+  --main-dark-blue: hsl(217, 54%, 11%);
+  --card-dark-blue: hsl(216, 50%, 16%);
+  --line-dark-blue: hsl(215, 32%, 27%);
+}
+
+body {
+  background-color: var(--main-dark-blue);
+}
+
+.card-border {
+  position: absolute;
+  display: grid;
+  padding: 15px;
+  top: calc(50vh - 290px);
+  left: calc(50vw - 180px);
+  height: 580px;
+  width: 360px;
+
+  border-radius: 12px 12px 50px 50px;
+  background-color: hsl(217, 54%, 10%);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  background-color: var(--card-dark-blue);
+  height: 530px;
+  width: 330px;
+  border-radius: 12px;
+  padding: 25px;
+}
+
+.card img {
+  height: 280px;
+  width: 280px;
+
+  border-radius: 8px;
+}
+
+.card-img {
+  cursor: pointer;
+}
+
+.card .card-img:hover div {
+  opacity: 1;
+}
+
+.card-img div {
+  height: 280px;
+  width: 280px;
+  position: absolute;
+  top: 40px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  
+  background-color: hsla(178, 100%, 50%, 0.40);
+  border-radius: 8px;
+  opacity: 0;
+}
+
+.card h1 {
+  display: inline-block;
+  font-size: 22px;
+  color: white;
+
+  width: 181px;
+  cursor: pointer;
+}
+
+.card h1:hover {
+  color: var(--cyan);
+}
+
+.card p {
+  
+  color: var(--soft-blue);
+}
+
+.nft-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nft-price div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nft-price div:first-child span {
+  color: var(--cyan);
+}
+
+.nft-price div:last-child span {
+  font-size: 15px;
+  color: var(--soft-blue);
+}
+
+.card-line {
+  background-color: var(--line-dark-blue);
+  height: 1px;
+  width: 100%;
+}
+
+.card-author {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.card-author img {
+  border: 1px solid white;
+  border-radius: 20px;
+  height: 40px;
+  width: 40px;
+}
+
+.card-author span {
+  color: white;
+  cursor: pointer;
+}
+
+.card-author span:hover {
+  color: var(--cyan);
+}
+
+
+.attribution { 
+  position: absolute;
+  bottom: 10px;
+  left: calc(50vw - 132.5px);
+
+  font-size: 11px; 
+  text-align: center; 
+  color: var(--soft-blue);
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.attribution a:hover {
+  color: var(--cyan);
+}
