@@ -26,12 +26,10 @@ body {
 .card-border {
   position: absolute;
   display: grid;
-  padding: 15px;
+  padding: 15px 15px 35px 15px;
   top: calc(50vh - 290px);
   left: calc(50vw - 180px);
-  height: 580px;
   width: 360px;
-
   border-radius: 12px 12px 50px 50px;
   background-color: hsl(217, 54%, 10%);
 }
@@ -41,8 +39,6 @@ body {
   flex-direction: column;
   gap: 13px;
   background-color: var(--card-dark-blue);
-  height: 530px;
-  width: 330px;
   border-radius: 12px;
   padding: 25px;
 }
